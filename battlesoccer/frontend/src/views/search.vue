@@ -2,7 +2,7 @@
 <div class="ody">
   <br><br><br>
       <div id="wrap">
-<input type="text"  v-model="search" ref="search" placeholder="Search Team/Player name?">
+<input type="text"  :value='search' @input='evt=>search=evt.target.value' ref="search" placeholder="Search Team/Player name?">
 <input id="search_submit"  type="submit">
 </div><br><br><br><br><br><br>
 
