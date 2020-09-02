@@ -2,7 +2,7 @@
   <div class="ody" v-if="team.coverpic">
 <div class="profile-page">
     <div><v-lazy-image :src="team.coverpic"  class="responsive"
-    src-placeholder="https://cdn-images-1.medium.com/max/80/1*xjGrvQSXvj72W4zD6IWzfg.jpeg"
+    src-placeholder="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTDjsRb3qChxX4vFIFiN5-V3b4MyeaOzdywNg&usqp=CAU"
      style="margin-top:65px;" />
     </div>
     <div class="main main-raised">
@@ -14,13 +14,13 @@
 	                        <div class="avatar">
                                          <div class="upload-btn-wrapper">
   <button class="btn btn-just-icon btn-link btn-twitter"><li class="fa fa-user-o"></li></button>
-  <input type="file" name="myfile" @change="onchange"/>
+  <input type="file" name="myfile" v-on:input="onchange"/>
 </div>
                         <v-lazy-image :src="team.logo" class="img-raised rounded-circle img-fluid"
     src-placeholder="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR508iDAmSEkkOWUuK7SsEbpflpVR1TKl1ljQ&usqp=CAU"
      />	                                                  <div class="upload-btn-wrapper">
   <button class="btn btn-just-icon btn-link btn-twitter"><li class="fa fa-picture-o"></li></button>
-  <input type="file" name="myfileprofile" @change="onchangeprofile"/>
+  <input type="file" name="myfileprofile" v-on:input"onchangeprofile"/>
 </div>
                           </div>
 	                        <div class="name">
